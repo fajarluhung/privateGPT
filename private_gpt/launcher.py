@@ -125,4 +125,4 @@ def create_app(root_injector: Injector) -> FastAPI:
             ui = root_injector.get(PrivateGptUi)
             ui.mount_in_app(app, settings.ui.path)
 
-        return app
+        return ui
