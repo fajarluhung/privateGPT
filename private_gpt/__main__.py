@@ -11,4 +11,4 @@ from private_gpt.settings.settings import settings
 # uvicorn.run(app, port=settings().server.port, log_config=None)
 _blocks = app.get_ui_blocks()
 _blocks.queue()
-_blocks.launch(share=True, debug=False, show_api=False)
+_blocks.launch(share=True, debug=False, show_api=True)
